@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Soal_Array {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
