@@ -5,7 +5,7 @@ public class Soal_Array {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // // Soal 1
+        // Soal 1
         int[] array = { 1, 9, 3, 9, 2, 4 };
 
         int x;
@@ -16,9 +16,9 @@ public class Soal_Array {
         } else {
             System.err.println("out of bones");
         }
-        // // end soal 1
+        // end soal 1
 
-        // // soal 2
+        // soal 2
         int[] array2 = new int[3];
 
         int sum = 0;
@@ -27,9 +27,9 @@ public class Soal_Array {
             sum += inputTambah;
         }
         System.out.println(sum);
-        // // end soal 2
+        //  end soal 2
 
-        // // soal 3
+        // soal 3
         int[] array3 = new int[3];
 
         for (int i = 0; i < array3.length; i++) {
@@ -39,9 +39,9 @@ public class Soal_Array {
         for (int i = array3.length - 1; i >= 0; i--) {
             System.out.print(array3[i] + " ");
         }
-        // // end soal 3
+        // end soal 3
 
-        // // soal 4
+        // soal 4
         int[] array4 = { 9, 3, 5, 4, 1 };
         int cari = input.nextInt();
 
@@ -52,7 +52,7 @@ public class Soal_Array {
                 System.err.println("tidak ditemukan");
             }
         }
-        // // end soal 4
+        // end soal 4
 
         // soal 5
         int[] array5_1 = { 1, 2, 0, 3 };
@@ -96,6 +96,6 @@ public class Soal_Array {
             }
             System.out.println("]");
         }
-
+        // end soal 6
     }
 }
