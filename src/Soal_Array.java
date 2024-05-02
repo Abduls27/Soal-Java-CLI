@@ -97,5 +97,43 @@ public class Soal_Array {
             System.out.println("]");
         }
         // end soal 6
+
+        //Soal 7
+        int[] array7 = {9, 2, 1};
+        int[] array8 = {2, 12, 3};
+
+        int[] hasil = new int[3];
+
+        for (int i = 0; i < array7.length; i++) {
+            hasil[i] = tambahArray(array7[i], array8[i]);
+            System.out.print(hasil[i] + " ");
+        }
+
+        //Soal 8
+        System.out.print("Masukkan Nilai : ");
+        int n = input.nextInt();
+        System.out.println();
+
+        int[] array9 = new int[3];
+
+        array9[0] = n;
+        array9[1] = tambahSelf(n);
+        array9[2] = kaliSelf(n);
+
+        for (int i = 0; i < array9.length; i++) {
+            System.out.print(array9[i] + " ");
+        }
+    }
+    public static int tambahArray(int nilai_array1, int nilai_array2) {
+        return nilai_array1 + nilai_array2;
+    }
+
+
+    public static int tambahSelf(int n) {
+        return n + n;
+    }
+
+    public static int kaliSelf(int n) {
+        return n * n;
     }
 }
