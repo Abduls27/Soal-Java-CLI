@@ -33,5 +33,31 @@ public class Uts {
      int determinan = (a*e*i + b*f*g + c*d*h) - (c*e*g + b*d*i + a*f*h);
      System.out.println(determinan);
 
+    // soal 3
+    String nama;
+        int skor;
+
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int n = input.nextInt();
+
+        String nilaiNama = "";
+        int nilaiSkor = Integer.MAX_VALUE;
+
+        int i = 1;
+        while (i <= n) {
+            System.out.print("Masukkan nama mahasiswa ke-" + i + ": ");
+            nama = input.next();
+            System.out.print("Masukkan skor siswa: ");
+            skor = input.nextInt();
+            i++;
+
+            if (skor < nilaiSkor) {
+                nilaiSkor = skor;
+                nilaiNama = nama;
+            }
+        }
+
+
+        System.out.println("Skor terendah diperoleh " + nilaiNama + " dengan poin " + nilaiSkor);    
     }
 }
