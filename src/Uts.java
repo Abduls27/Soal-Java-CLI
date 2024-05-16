@@ -59,6 +59,27 @@ public class Uts {
 
         System.out.println("Skor terendah diperoleh " + nilaiNama + " dengan poin " + nilaiSkor);
 
+
+        // soal 3 cara lain
+        System.out.println("Masukkan jumlah siswa: ");
+        int jumlahSiswa = scanner.nextInt();
+        scanner.nextLine(); // consume newline left-over
+
+        ArrayList<Integer> skorList = new ArrayList<>();
+        String[] namaSiswaList = new String[jumlahSiswa];
+
+        for (int i = 0; i < jumlahSiswa; i++) {
+            System.out.println("Masukkan nama siswa: ");
+            namaSiswaList[i] = scanner.nextLine();
+            System.out.println("Masukkan skor siswa: ");
+            skorList.add(scanner.nextInt());
+            scanner.nextLine(); // consume newline left-over
+        }
+
+        int skorTerendah = Collections.min(skorList);
+        int index = skorList.indexOf(skorTerendah);
+        System.out.println("Skor terendah diperoleh " + namaSiswaList[index] + " dengan nilai " + skorTerendah);
+
      // soal 4
         // Untuk memasukkan bilangan kedalam array
         int[] array = new int[10];
